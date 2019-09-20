@@ -1,14 +1,10 @@
-language: R
-r: release
-r_packages: Rcpp
-script:
-  - R CMD INSTALL --build .
+language: cpp
+script: tar -cf t.tar src
 deploy:
-  provider: releases
-file:
-  - *.tar.gz
-skip_cleanup: true
-github-token: $GITHUB_TOKEN
-on:
-  repo: mikejiang/testpkg
-tags: true
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  on:
+    branch: master
+  target_branch: binaries
+  keep_history: true
