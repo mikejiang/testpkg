@@ -5,10 +5,10 @@ script:
   - R CMD INSTALL --build .
 deploy:
   provider: releases
-file:
-  - *.tar.gz
-skip_cleanup: true
-github-token: $GITHUB_TOKEN
-on:
-  repo: mikejiang/testpkg
-tags: true
+  file_glob: true
+  file: *.tar.gz
+  skip_cleanup: true
+  github-token: $GITHUB_TOKEN
+  on:
+    repo: mikejiang/testpkg
+  tags: true
