@@ -1,11 +1,10 @@
 language: cpp
-script: tar -cf t.tar src
+script: tar -cf t.tar src && git checkout binaries && git add t.tar && git commit -m "add"
 deploy:
-  provider: releases
-  file_glob: true
-  file: t.tar
+  provider: pages
   skip_cleanup: true
-  api_key: $GITHUB_TOKEN
+  github_token: $GITHUB_TOKEN
   on:
-    repo: mikejiang/testpkg
-  tags: false
+    branch: master
+  target_branch: binaries
+  keep_history: true
