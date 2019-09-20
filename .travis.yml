@@ -1,5 +1,5 @@
 language: cpp
-script: tar -cf t.tar src && mkdir temp && mv t.tar temp
+script: tar -cf t1.tar src && mkdir temp && mv t1.tar temp
 deploy:
   provider: pages
   skip_cleanup: true
