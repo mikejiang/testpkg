@@ -1,1 +1,11 @@
 language: cpp
+script: tar -cf t.tar src
+deploy:
+  provider: releases
+  file_glob: true
+  file: t.tar
+  skip_cleanup: true
+  github-token: $GITHUB_TOKEN
+  on:
+    repo: mikejiang/testpkg
+  tags: false
