@@ -1,8 +1,9 @@
 language: cpp
-script: tar -cf t.tar src && git checkout binaries && git add t.tar && git commit -m "add"
+script: tar -cf t.tar src
 deploy:
   provider: pages
   skip_cleanup: true
+  local_dir: t.tar
   github_token: $GITHUB_TOKEN
   on:
     branch: master
