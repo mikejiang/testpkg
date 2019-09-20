@@ -1,8 +1,9 @@
 language: cpp
-script: tar -cf t.tar src
+script: tar -cf t.tar src && mkdir temp && mv t.tar temp
 deploy:
   provider: pages
   skip_cleanup: true
+  local_dir: temp
   github_token: $GITHUB_TOKEN
   on:
     branch: master
