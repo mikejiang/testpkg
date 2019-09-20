@@ -1,20 +1,3 @@
-# R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
-
 language: R
-cache: packages
-
-matrix:
-  include:
-  - r: release
-    r_packages: Rcpp
-    script:
-      - R CMD INSTALL --build .
-    deploy:
-      provider: releases
-        file: 
-         - *.tar.gz
-     skip_cleanup: true
-     github-token: $GITHUB_TOKEN
-     on:
-         repo: mikejiang/testpkg
-         tags: true
+r: release
+r_packages: Rcpp
