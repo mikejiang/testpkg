@@ -5,8 +5,8 @@ deploy:
   access_key_id: GOOGFQESMW4I7KADFVASKI3M
   secret_access_key:
     secure: cFfUTgMwTMeDiJau067gjqqmFH+kZD1JZguXxKpGZh0aTWPEls7eVJN5gkOyhOqiUn4cM54W5vkIFz7X64uRGnVsR7zd3a2+6ptJtR27GWPXC9xrVxU5VUzXcMj91wNTIj9NPOKrJaDt24tlWFA7F3bsdGhYiB/MDGOppKxM9m2qlGZZ4QwZ7x1fynBYV64YTeMUDXtirCxnHpknbVYT3jPUaGq5sVECaJkp5zeaqSCQRjTBlx/bn5rhANjXf/siBJIQWAQ2gbsodtsXXz3PiwniHJgJn6i4yqxG7bPFSEeGt0CSVSljrQygPPBjett+G75jJhThGc1DwrFy/sIUK5UzdnvSudma8+1u6ZE8/M9umFIMgqwEfCFzuOouQanDhUMiq89M9eLB21I/Le/kXfYtavQArwu5VCn7UsXG8rJfCNo3pEIVRI2eEKaj1KIRlsGPBs2iNpTCxSWgsaTyIUFjCn+HBaJUvxAPkufIo9L8t2UJjL1lLx7tDXMPPdlRpqlkfd8+jZksEU3Mn6ZZ2xl5tGZb11C6uCHCZcn/+j4I5mjg1e/aurqiDWJupZCpxo1c2fFwzFcDfRaecCf/jrsdmfKjiJVwctQXKhSEupNIXxZ48JJ6AvUsbiCJXpr1T8lYUS/LTBu1rVPYlS3T/b/hEp6g3Wroq+Wj9bU7AE4=
-  bucket: testing
+  bucket: testing-mikejiang
   local-dir: temp
   on:
-    repo: testing-mikejiang
+    repo: mikejiang/testpkg
   acl: public-read
