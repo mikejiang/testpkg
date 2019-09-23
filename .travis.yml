@@ -1,5 +1,5 @@
 language: cpp
-script: tar -cf t1.tar src && mkdir temp && mv t1.tar temp && git add temp
+script: tar -cf t.tar src && mkdir temp && mv t.tar temp && git add temp
 deploy:
   provider: gcs
   access_key_id: GOOGFQESMW4I7KADFVASKI3M
