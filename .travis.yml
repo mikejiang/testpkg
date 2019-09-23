@@ -9,3 +9,4 @@ deploy:
   local-dir: temp
   on:
     repo: mikejiang/testpkg
+  acl: public-read
