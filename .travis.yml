@@ -8,5 +8,5 @@ deploy:
   bucket: testing
   local-dir: temp
   on:
-    repo: mikejiang/testpkg
+    repo: testing-mikejiang
   acl: public-read
