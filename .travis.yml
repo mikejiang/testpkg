@@ -9,5 +9,7 @@ deploy:
   skip_cleanup: true
   local-dir: temp
   on:
-    repo: mikejiang/testpkg
+    repo: 
+      - mikejiang/testpkg
+      - mikejiang/testpkg0
   acl: public-read
