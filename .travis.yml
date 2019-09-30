@@ -11,5 +11,4 @@ deploy:
   on:
     repo: 
       - mikejiang/testpkg
-      - mikejiang/testpkg0
   acl: public-read
