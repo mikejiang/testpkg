@@ -1,0 +1,3 @@
+[submodule "testA"]
+	path = testA
+	url = git@github.com:mikejiang/testA.git
